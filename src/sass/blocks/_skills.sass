@@ -1,0 +1,111 @@
+.skills
+    margin: 140px 0px 120px 0px
+    &__title
+        font-family: 'Roboto'
+        font-weight: 500
+        font-size: 34px
+        line-height: 38px
+        color: #1B1B1B
+        text-align: center
+        position: relative
+        margin-bottom: 60px
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            left: 34%
+            transform: translateX(-50%)
+            width: 65px
+            height: 5px
+            border-radius: 5px
+            background-color: $main-color
+    &__wrapper
+        margin: 0 auto
+        width: 1010px
+        min-height: 477px
+        background: rgba(255, 255, 255, 0.8)
+        border: 2px solid #717171
+        border-radius: 5px
+        padding: 62px 21px 27px 21px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        position: relative
+    &__item
+        display: flex
+        margin-bottom: 35px
+    &__descr
+        width: 347px
+        margin-left: 20px
+        p
+            font-family: 'Roboto'
+            font-weight: 300
+            font-size: 14px
+            line-height: 16px
+            color: #000000
+        h5
+            font-family: 'Roboto'
+            font-weight: 700
+            font-size: 16px
+            line-height: 18px
+            color: #000000
+            margin-bottom: 10px
+            position: relative
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                width: 347px
+                height: 4px
+                bottom: -6px
+                background: rgba(83, 193, 222, 0.2)
+                backdrop-filter: blur(2px)
+                border-radius: 5px
+    &__logo
+        width: 95px
+        height: 95px
+        background: #EFEFEF
+        border-radius: 5px
+        display: flex
+        align-items: center
+        justify-content: center
+        &_sass
+            height: 57px
+        &_git
+            height: 67px
+    &__decorate_1
+        position: absolute
+        left: -231px
+        top: 92%
+        width: 600px
+        height: 100px
+        background: rgba(103, 197, 157, 0.4)
+        backdrop-filter: blur(3.5px)
+        border-radius: 10px
+    &__decorate_2
+        position: absolute
+        border-radius: 5px
+        right: -144px
+        top: 58%
+        width: 287px
+        height: 32px
+        background: $second-color
+        z-index: -1
+    &__decorate_3
+        position: absolute
+        border-radius: 5px
+        right: -88px
+        top: -7%
+        width: 795.69px
+        height: 66.78px
+        background: $main-color
+    &__decorate_4
+        position: absolute
+        border-radius: 5px
+        left: -106px
+        top: 20px
+        width: 185px
+        height: 32px
+        background: rgba(103, 197, 157, 0.2)
+        backdrop-filter: blur(7.5px)
+        z-index: -1

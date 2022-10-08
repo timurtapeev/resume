@@ -1,0 +1,93 @@
+.for-client
+    padding-top: 80px
+    margin-bottom: 100px
+    &__title
+        @include title
+        margin-bottom: 80px
+        &::after
+            @include title__decorate
+            width: 507px
+    &__subtitle
+        text-align: center
+        font-family: 'Roboto'
+        font-weight: 500
+        font-size: 28px
+        line-height: 32px
+        color: #1B1B1B
+        position: relative
+        margin-bottom: 40px
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            height: 4px
+            border-radius: 5px
+            left: 39%
+            background-color: $main-color
+            width: 57px
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        position: relative
+    &__item
+        display: flex
+        align-items: center
+        margin-bottom: 20px
+        width: 538px
+        height: 110px
+        border: 1px solid #717171
+        border-radius: 5px
+        padding: 30px 27px 35px
+        margin-bottom: 60px
+        &:last-child
+            background-color: rgba(103, 197, 157, 0.3)
+        &_subtitle
+            @include item__title
+            margin-bottom: 3px
+        &_descr
+            @include item__descr
+            margin-bottom: 0
+    &__logo
+        &_1
+            height: 47px
+        &_2
+            height: 47px
+        &_3
+            height: 47px
+        &_4
+            height: 42px
+        &_5
+            height: 42px
+        &_7
+            height: 47px
+    &__arrow
+        &_1
+            @include arrow
+            transform: rotate(180deg)
+            top:50px
+        &_2
+            @include arrow
+            transform: rotate(-90deg)
+            width: 40px
+            right: 279px
+            top: 140px
+        &_3
+            @include arrow
+            top: 220px
+        &_4
+            @include arrow
+            transform: rotate(-90deg)
+            width: 40px
+            left: 279px
+            top: 310px
+        &_5
+            @include arrow
+            transform: rotate(180deg)
+            top:390px
+        &_6
+            @include arrow
+            transform: rotate(-45deg)
+            width: 60px
+            right: 470px
+            top: 480px

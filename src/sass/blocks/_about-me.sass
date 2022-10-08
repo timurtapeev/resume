@@ -1,0 +1,142 @@
+.about-me
+    padding-top: 80px
+    &__title
+        @include title
+        position: relative
+        &::before
+            @include title__decorate
+            width: 360px
+            top: 55px
+    &__wrapper
+        margin-top: 80px
+        display: flex
+        justify-content: space-around
+    &__subtitle
+        font-family: 'Roboto'
+        position: relative
+        font-weight: 400
+        font-size: 58px
+        line-height: 68px
+        color: #1B1B1B
+        margin-bottom: 14px
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            left: 47%
+            bottom: 49px
+            transform: translateX(50%)
+            width: 211px
+            height: 8px
+            background: rgba(113, 187, 174, 0.8)
+            border-radius: 5px
+            z-index: -1
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            left: 15%
+            bottom: 3px
+            transform: translateX(-50%)
+            width: 345px
+            height: 8px
+            border-radius: 5px
+            background-color: $main-color
+    &__descr
+        width: 503px
+        font-family: 'Roboto'
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+        color: #717171
+        margin-bottom: 20px
+    &__text
+        margin-bottom: 55px
+    &__photo
+        width: 444px
+        height: 666px
+        padding-top: 15px
+        position: relative
+        img
+            width: inherit
+            height: inherit
+            border-radius: 5px
+    &__service
+        display: flex
+        &_item
+            display: flex
+            align-items: center
+            &:first-child
+                margin-right: 40px
+            h3
+                font-family: 'Roboto'
+                font-weight: 700
+                font-size: 18px
+                line-height: 20px
+                color: #1B1B1B
+    &__education
+        &_title
+            font-family: 'Roboto'
+            font-weight: 700
+            font-size: 28px
+            line-height: 32px
+            color: #1B1B1B
+            margin-left: 60px
+            position: relative
+            margin-bottom: 15px
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                transform: translateX(-30%)
+                width: 45px
+                height: 4px
+                border-radius: 5px
+                background-color: $main-color
+                z-index: -1
+        &_subtitle
+            @include item__title
+        &_descr
+            @include item__descr
+            margin-bottom: 0
+        &_item
+            display: flex
+            align-items: center
+            margin-bottom: 20px
+    &__decorate
+        &_1
+            position: absolute
+            border-radius: 5px
+            transform: translateX(80%)
+            top: -9px
+            width: 285px
+            height: 34px
+            background: $second-color
+        &_2
+            position: absolute
+            border-radius: 5px
+            transform: translateX(100%)
+            top: -1px
+            width: 274px
+            height: 48px
+            background: rgba(103, 197, 157, 0.2)
+            z-index: -1
+        &_3
+            position: absolute
+            border-radius: 5px
+            left: 150px
+            transform: translateX(-50%)
+            top: 97%
+            width: 385px
+            height: 79px
+            background: rgba(103, 197, 157, 0.4)
+            backdrop-filter: blur(5px)
+        &_4
+            position: absolute
+            border-radius: 5px
+            left: 200px
+            top: 95%
+            width: 299px
+            height: 75px
+            background: $main-color
+            z-index: -1

@@ -1,0 +1,107 @@
+.portfolio
+    padding-top: 80px
+    &__title
+        @include title
+        position: relative
+        margin-bottom: 120px
+        &::after
+            @include title__decorate
+            width: 407px
+    &__card-list
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &__card
+        &_1
+            background: url(../img/portfolio-1.png) center center/cover no-repeat
+        &_2
+            background: url(../img/promo-bg.jpg) center center/cover no-repeat
+        width: 286px
+        height: 383px
+        border-radius: 5px
+        position: relative
+        margin-bottom: 100px
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            bottom: -38px
+            right: -63px
+            border-radius: 5px
+            z-index: 1
+            width: 236px
+            height: 60px
+            background: rgba(103, 197, 157, 0.4)
+            backdrop-filter: blur(10px)
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            width: 262px
+            top: -20px
+            left: -20px
+            height: 262px
+            border-radius: 5px
+            background-color: $main-color
+            z-index: -1
+.card
+    &__title
+        font-family: 'Roboto'
+        font-weight: 500
+        font-size: 40px
+        line-height: 47px
+        color: #FFFFFF
+        text-align: center
+        position: relative
+        margin-bottom: 50px
+        &_hover
+            &::after
+                @include title__decorate
+                width: 208px
+                height: 3px
+                position: absolute
+                bottom: -5px
+    &__filter
+        padding: 87px 0 20px
+        width: inherit
+        height: inherit
+        background: rgba(40, 40, 40, 0.3)
+        backdrop-filter: blur(0.5px)
+        border-radius: 5px
+        &_hover
+            backdrop-filter: blur(2px)
+    &__wrapper
+        flex-direction: column
+        justify-content: center
+        padding: 15px 22px 0 23px
+        height: 161px
+        width: 100%
+        background: rgba(95, 95, 95, 0.5)
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    &__descr
+        font-family: 'Roboto'
+        font-weight: 400
+        font-size: 18px
+        line-height: 20px
+        color: #fff
+        margin-bottom: 20px
+    &__btn
+        margin: 0 auto
+        width: 149px
+        height: 28px
+        background: #fff
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 5px
+        border: none
+        transition: all 0.5s
+        &:hover
+            background-color: #EFEFEF
+        &:active
+            background-color: #D9D9D9
+        a
+            font-family: 'Roboto'
+            font-weight: 500
+            font-size: 16px
+            line-height: 19px
+            color: #1B1B1B
+            text-decoration: none

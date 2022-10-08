@@ -1,0 +1,68 @@
+.price
+    padding-top: 80px
+    margin-bottom: 150px
+    &__title
+        @include title
+        margin-bottom: 70px
+        &::after
+            @include title__decorate
+            width: 446px
+    &__item
+        margin: 0 auto
+        display: flex
+        width: 473px
+        height: 79px
+        align-items: center
+        margin-bottom: 30px
+        &_wrapper
+            display: flex
+            flex-direction: column
+        &_subtitle
+            font-family: 'Roboto'
+            font-weight: 500
+            font-size: 24px
+            line-height: 28px
+            color: #1B1B1B 
+        &_info
+            display: flex
+            justify-content: space-between
+        &_number
+            font-family: 'Roboto'
+            font-weight: 400
+            font-size: 20px
+            line-height: 22px
+            color: #1B1B1B
+            position: relative
+            &_1
+                &::after
+                    @include number__decorate
+                    width: 240px
+            &_2
+                &::after
+                    @include number__decorate
+                    width: 185px
+            &_3
+                &::after
+                    @include number__decorate
+                    width: 296px
+        &_descr
+            font-family: 'Roboto'
+            font-weight: 400
+            font-size: 20px
+            line-height: 22px
+            color: #717171
+    &__logo
+        &_1
+            height: 47px
+        &_2
+            height: 47px
+        &_3
+            height: 42px
+    &__note
+        text-align: center
+        font-family: 'Roboto'
+        font-weight: 400
+        font-size: 16px
+        line-height: 18px
+        color: #717171
+        margin-top: 40px
