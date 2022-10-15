@@ -59,12 +59,6 @@ window.addEventListener('DOMContentLoaded', () => {
         closeNavMenu();
     });
 
-    navBackground.addEventListener('click', () => {
-        if (!navBackground.classList.contains('hide')) {
-            closeNavMenu();
-        }
-    });
-
     navItemList.forEach(elem => {
         elem.addEventListener('click', ()   => {
             if (hamburger.classList.contains('hamburger_active')) {
@@ -79,10 +73,10 @@ window.addEventListener('DOMContentLoaded', () => {
         if (hamburger.classList.contains('hamburger_active')) {
             body.style.overflow = 'hidden';
             navigationPanel.classList.remove('nav_scrolled');
-            navBackground.classList.remove('hide');
+            navBackground.classList.add('nav__background_active');
         } else {
             body.style.overflow = '';
-            navBackground.classList.add('hide');
+            navBackground.classList.remove('nav__background_active');
         }
     }
 
@@ -92,7 +86,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
     closeModalElements.forEach((elem) => {
         elem.addEventListener('click', () => {
-            controlWindow(modalWindow);
+            if(modalWindow.classList.contains('modal_active')) {
+                controlWindow(modalWindow);
+            } else {
+                closeNavMenu();
+            }
         });
     });
 
