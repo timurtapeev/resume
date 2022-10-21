@@ -17,7 +17,7 @@ $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
  
 $mail->setFrom('timurtimurovich2001@mail.ru', 'Заявка с сайта');
-$mail->addAddress('fiheyol769@deitada.com');     
+$mail->addAddress('tspeevtimur@gmail.com');     
 $mail->isHTML(true);                                  
 
 $mail->Subject = 'Данные';
