@@ -12,12 +12,12 @@ $mail->isSMTP();
 $mail->Host = 'smtp.mail.ru';
 $mail->SMTPAuth = true;
 $mail->Username = 'timurtimurovich2001@mail.ru';
-$mail->Password = 'XhRaM9WFv6eQ8SwvubC5';
+$mail->Password = 'keakgUr3nvydZYiTcKTe';
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
  
 $mail->setFrom('timurtimurovich2001@mail.ru', 'Заявка с сайта');
-$mail->addAddress('tspeevtimur@gmail.com');     
+$mail->addAddress('tapeevtimur@mail.ru');     
 $mail->isHTML(true);                                  
 
 $mail->Subject = 'Данные';
